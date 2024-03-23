@@ -30,6 +30,15 @@
       "changeable": 1
     },
         {
+      "key": "兄弟",
+      "name": "🐉┃兄弟影视┃",
+      "type": 3,
+      "api": "csp_BaiPiao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+        {
       "key": "白嫖",
       "name": "🐉┃白飘影视┃",
       "type": 3,
@@ -60,15 +69,6 @@
       "changeable": 1,
       "ext": "https://www.czzy55.com/"
     },
-         {
-            "key": "天天",
-            "name": "🐉┃天天秒播┃",
-            "type": 3,
-            "api": "csp_TTian",
-            "jar": "http://tc.feixunline.cn/down.php/2e85feb2888d9efb5b396258f22841ac.jar",
-            "playerType": 2,
-            "ext": "http://op.ysdqjs.cn"
-        },
          {
       "key": "csp_XYQHiker_奇趣影院",
       "name": "🐉┃奇趣影院┃",
@@ -109,6 +109,15 @@
       "api": "https://agit.ai/fantaiying/fty/raw/branch/master/ext/drpy2.min.js",
       "ext": "https://agit.ai/fantaiying/fty/raw/branch/master/ext/jp.js"
     },
+             {
+            "key": "天天",
+            "name": "🐉┃天天秒播┃",
+            "type": 3,
+            "api": "csp_TTian",
+            "jar": "http://tc.feixunline.cn/down.php/2e85feb2888d9efb5b396258f22841ac.jar",
+            "playerType": 2,
+            "ext": "http://op.ysdqjs.cn"
+        },
         {
       "key": "玩偶哥哥",
       "name": "🐉┃玩偶4k源┃",
@@ -118,6 +127,28 @@
       "quickSearch": 1,
       "changeable": 0,
       "ext": "http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd$$$https://www.wogg.xyz/$$$弹"
+    },
+        {
+      "key": "Funletu",
+      "name": "🐉┃夸克4K趣┃",
+      "type": 3,
+      "api": "csp_Funletu",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "./lib/tokenm.json"
+    },
+    {
+      "key": "QuarkPanso",
+      "name": "🐉┃夸克4K盘┃",
+      "type": 3,
+      "api": "csp_QuarkPanso",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "./lib/tokenm.json"
     },
     {
       "key": "drpy_js_菜狗",
@@ -160,6 +191,17 @@
       "type": 3,
       "api": "./lib/drpy2.min.js",
       "ext": "./lib/百忙无果.js"
+    },
+    {
+      "key": "T4-yinyuetai",
+      "name": "🐉┃音悦台MV┃",
+      "type": 4,
+      "api": "https://catbox.n13.club/yyt.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": true
     },
 {
 "key": "dr_码上看18哈",
@@ -1468,87 +1510,87 @@
       ]
     },
     {
-      "名称": "量子廣告",
-      "主机": [
-        “vip.lz“,
-        “高清lz“,
-        “v.cdnlz“
+      "name": "量子廣告",
+      "hosts": [
+        "vip.lz",
+        "hd.lz",
+        "v.cdnlz"
       ],
-      “正则表达式”: [
-        “# EXT-X-DISCONTINUITY \ \ r * \ \ n * # EXT INF:6.433333，【\ \ S \ \ S】*？#外部-X-不连续“,
-        “#EXTINF。*?\\s+。*?1o。*?\\.ts\\s+“
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
       ]
     },
     {
-      "名称": "非凡廣告",
-      "主机": [
-        “vip.ffzy“,
-        “高清”
+      "name": "非凡廣告",
+      "hosts": [
+        "vip.ffzy",
+        "hd.ffzy"
       ],
-      “正则表达式”: [
-        “# EXT-X-DISCONTINUITY \ \ r * \ \ n * # EXT INF:6.666667，【\ \ S \ \ S】*？#外部-X-不连续“,
-        “#EXTINF。*?\\s+。*?1o。*?\\.ts\\s+“
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
       ]
     },
     {
-      "名称": "火山嗅探",
-      "主机": [
-        “霍山网”
+      "name": "火山嗅探",
+      "hosts": [
+        "huoshan.com"
       ],
-      “正则表达式”: [
-        “项目标识=“
+      "regex": [
+        "item_id="
       ]
     },
     {
-      "名称": "抖音嗅探",
-      "主机": [
-        “抖音网”
+      "name": "抖音嗅探",
+      "hosts": [
+        "douyin.com"
       ],
-      “正则表达式”: [
-        “is_play_url=“
+      "regex": [
+        "is_play_url="
       ]
     }
   ],
-  “旗帜“: [
+  "flags": [
     "优酷视频",
-    “优酷”,
+    "youku",
     "优酷",
     "优 酷",
     "优酷视频",
-    “qq“,
+    "qq",
     "腾讯",
     "腾 讯",
     "腾讯视频",
-    “爱奇艺”,
-    《齐一》,
+    "iqiyi",
+    "qiyi",
     "奇艺",
     "爱奇艺",
     "爱 奇 艺",
-    “m1905”,
-    “西瓜”,
-    “乐视”,
-    《施乐》,
+    "m1905",
+    "xigua",
+    "letv",
+    "leshi",
     "乐视",
     "乐 视",
-    “搜狐”,
+    "sohu",
     "搜狐",
     "搜 狐",
     "搜狐视频",
-    “土豆”,
-    “pptv”,
-    “mgtv”,
+    "tudou",
+    "pptv",
+    "mgtv",
     "芒果",
-    “imgo”,
-    "芒果电视”,
-    "芒 果电视”,
-    《哔哩哔哩》,
+    "imgo",
+    "芒果TV",
+    "芒 果 T V",
+    "bilibili",
     "哔 哩",
     "哔 哩 哔 哩"
   ],
-  “广告”: [
-    “wan.51img1.com“,
-    “爱奇艺。iqiyi.hbuioo.com“,
-    “vip.ffzyad.com“,
-    “https://lf1-cdn-tos . bytegoofy . com/obj/tos-cn-I-dy/455 CCF 9e 8 AE 744378118 E4 BD 289288 DD“
+  "ads": [
+    "wan.51img1.com",
+    "iqiyi.hbuioo.com",
+    "vip.ffzyad.com",
+    "https://lf1-cdn-tos.bytegoofy.com/obj/tos-cn-i-dy/455ccf9e8ae744378118e4bd289288dd"
   ]
 }

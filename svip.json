@@ -19,6 +19,97 @@
       "quickSearch": 0,
       "filterable": 0
     },
+            {
+            "key": "AList",
+            "name": "飞龙AList网盘",
+            "type": 3,
+            "api": "csp_AList",
+            "searchable": 1,
+            "recordable": 0,
+            "ext": {
+                "drives": [
+    
+                    {
+                        "name": "🌱Arley",
+                        "server": "http://45.85.77.23:5244/"
+                    },
+                    {
+                        "name": "🌱潇洒个人",
+                        "server": "https://alist.azad.asia/"
+                    },
+                    {
+                        "name": "🌱鹏程",
+                        "server": "https://pan.pengcheng.team/"
+                    },
+                    {
+                        "name": "🌱星梦",
+                        "server": "https://pan.bashroot.top"
+                    },
+                    {
+                        "name": "🌱弱水分享",
+                        "server": "http://shicheng.wang:555/"
+                    },
+                    {
+                        "name": "🌱学习",
+                        "server": "http://45.85.77.23:5244/"
+                    },
+                    {
+                        "name": "🌱小陈",
+                        "server": "https://pan.oldming.top/"
+                    },
+                    {
+                        "name": "🌱动漫盘",
+                        "server": "http://pan.smjc.cc"
+                    },
+                    {
+                        "name": "🌱神秘小盘",
+                        "server": "https://yun.llzz.top/"
+                    },
+                    {
+                        "name": "🌱X影院",
+                        "server": "http://124.70.202.159:5678/"
+                    },
+                    {
+                        "name": "🌱姹莱坞",
+                        "server": "http://45.85.77.23:5244/"
+                    },
+                    {
+                        "name": "🌱乌云盘",
+                        "server": "http://124.70.137.72:5678/"
+                    },
+                    {
+                        "name": "🌱神族九帝",
+                        "server": "https://alist.shenzjd.com"
+                    },
+                    {
+                        "name": "🌱迅维云盘",
+                        "server": "https://pan.xwbeta.com"
+                    },
+                    {
+                        "name": "🌱共享盘",
+                        "server": "https://pan.oldming.top/"
+                    },
+                    {
+                        "name": "🌱梓凌妙妙",
+                        "server": "https://zi0.cc/"
+                    },
+                    {
+                        "name": "9T",
+                        "server": "https://drive.9t.ee",
+                        "params": [
+                            {
+                                "path": "/OneDrive",
+                                "pass": "dooglu"
+                            },
+                            {
+                                "path": "/115Cloud",
+                                "pass": "dooglu"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
 {"key": "csp_KungFu404","name":"🐉┃阿里设置┃","type": 3,"api": "csp_KungFu404", "searchable":0,"filterable": 0, "changeable":0,"jar":"./lib/alibaba.jar","ext":"http://127.0.0.1:9978/file/tvbox/token.txt+4k|fhd|auto"},
         {
       "key": "酷看",
@@ -68,17 +159,13 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "https://www.czzy55.com/"
-    },
-         {
-      "key": "csp_XYQHiker_奇趣影院",
-      "name": "🐉┃奇趣影院┃",
+    },   
+                                    {
+      "key": "影探",
+      "name": "🐉┃影探影院┃",
       "type": 3,
-      "api": "csp_XYQHiker",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://d.kstore.space/download/4708/js/奇趣影视.json",
-      "jar": "https://d.kstore.space/download/4708/lib/xyq723.jar"
+      "api": "./lib/drpy2.min.js",
+      "ext": "./lib/yt.js"
     },
     {"key": "dr_码上看369",
 "name": "🐉┃369秒播┃", 
@@ -109,6 +196,16 @@
       "api": "https://agit.ai/fantaiying/fty/raw/branch/master/ext/drpy2.min.js",
       "ext": "https://agit.ai/fantaiying/fty/raw/branch/master/ext/jp.js"
     },
+    {
+      "key": "南瓜",
+      "name": "🐉┃南瓜秒播┃",
+      "type": 3,
+      "api": "csp_NanGua",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
              {
             "key": "天天",
             "name": "🐉┃天天秒播┃",
@@ -127,28 +224,6 @@
       "quickSearch": 1,
       "changeable": 0,
       "ext": "http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd$$$https://www.wogg.xyz/$$$弹"
-    },
-        {
-      "key": "Funletu",
-      "name": "🐉┃夸克4K趣┃",
-      "type": 3,
-      "api": "csp_Funletu",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./lib/tokenm.json"
-    },
-    {
-      "key": "QuarkPanso",
-      "name": "🐉┃夸克4K盘┃",
-      "type": 3,
-      "api": "csp_QuarkPanso",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./lib/tokenm.json"
     },
     {
       "key": "drpy_js_菜狗",
@@ -192,6 +267,13 @@
       "api": "./lib/drpy2.min.js",
       "ext": "./lib/百忙无果.js"
     },
+            {
+      "key": "drpy_js_网飞.TV",
+      "name": "🐉┃网飞影视┃",
+      "type": 3,
+      "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/网飞.TV.js"
+    },
     {
       "key": "T4-yinyuetai",
       "name": "🐉┃音悦台MV┃",
@@ -214,6 +296,17 @@
 "filterable": 1,
 "ext": "./lib/18哈.js"
 },
+         {
+      "key": "csp_XYQHiker_奇趣影院",
+      "name": "🐉┃奇趣影院┃",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://d.kstore.space/download/4708/js/奇趣影视.json",
+      "jar": "https://d.kstore.space/download/4708/lib/xyq723.jar"
+    },
 {
 "key": "dr_码上看尘落",
 "name": "🐉┃落尘秒播┃",
@@ -235,16 +328,6 @@
 "filterable": 1,
 "ext": "./lib/NY影院.js"
 },
-{
-      "key": "南瓜",
-      "name": "🐉┃南瓜秒播┃",
-      "type": 3,
-      "api": "csp_NanGua",
-      "playerType": 2,
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
             {
       "key": "77",
       "name": "🐉┃七七影视┃",
@@ -260,13 +343,6 @@
       "type": 3,
       "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
       "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/秋霞.js"
-    },
-        {
-      "key": "drpy_js_网飞.TV",
-      "name": "🐉┃网飞影视┃",
-      "type": 3,
-      "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/网飞.TV.js"
     },
     	{
             "key": "T4-duanju",
